@@ -1,4 +1,3 @@
-//var NBAPlayerApp = angular.module('NBAPlayerApp',[]);
 var playerController = angular.module('playerController',[]);
 
 playerController.controller('ListCtrl',['$scope','$http',
@@ -10,9 +9,13 @@ playerController.controller('ListCtrl',['$scope','$http',
 		$scope.orderProp = '-age';
 	}]);
 
-playerController.controller('DetailCtrl',['$scope','$routeParams',
-	function($scope,$routeParams){
-		$scope.playerName = $routeParams.playerName;
+playerController.controller('DetailCtrl',['$scope','$routeParams','$http',
+	function($scope,$routeParams,$http){
+		//alert($routeParams.playerId);
+		$http.get('./players/'+$routeParams.playerId+'.json').success(function(data){
+			$scope.player = data;
+		});
+		
 	}]);
 
 /*NBAPlayerApp.controller('ListCtrl',['$scope','$http',function ($scope,$http){

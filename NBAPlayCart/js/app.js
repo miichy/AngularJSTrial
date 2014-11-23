@@ -9,7 +9,7 @@ myApp.config(['$routeProvider',
 				templateUrl:"partials/player-list.html",
 				controller:"ListCtrl"
 			}).
-			when('/players/:playerName',{
+			when('/players/:playerId',{
 				templateUrl:"partials/player-detail.html",
 				controller:"DetailCtrl"
 			}).
