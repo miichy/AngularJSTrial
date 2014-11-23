@@ -1,0 +1,32 @@
+[
+	{
+		"name":"kobe",
+		"age":32,
+		"imageUrl":"img/kobe.jpg",
+		"team":"LA lakers"
+	},
+	{
+		"name":"Jame",
+		"age":28,
+		"imageUrl":"img/kobe.jpg",
+		"team":"Cav"
+	},
+	{
+		"name":"Paul Goals",
+		"age":32,
+		"imageUrl":"img/kobe.jpg",
+		"team":"Bull"
+	},
+	{
+		"name":"Wade",
+		"age":29,
+		"imageUrl":"img/kobe.jpg",
+		"team":"Heats"
+	},
+	{
+		"name":"KD",
+		"age":24,
+		"imageUrl":"img/kobe.jpg",
+		"team":"Thunders"
+	}
+]
