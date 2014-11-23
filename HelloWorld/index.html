@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+	<head>
+		<script type="text/javascript" src="../js/angular.js"></script>
+		<script type="text/javascript" src="controller.js"></script>
+		<title>This is a Hello World</title>
+	</head>	
+	<body>
+		<div ng-controller='HelloController'>
+			<input ng-model='greeting.text'>
+			<p>{{greeting.text}},world</p>
+			<p>{{location}},world</p>
+		</div>
+	</body>
+</html>
