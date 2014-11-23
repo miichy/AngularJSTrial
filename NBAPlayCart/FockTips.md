@@ -5,7 +5,7 @@
 #3 一个逗号引发的“血案” var myApp = angular.module('myApp'['ngRoute','playerController']);
                      var myApp = angular.module('myApp'['ngRoute','playerController']);
 
-#4 改错文件，同名不同路径的文件，更改后不能生效。各种坑爹啊！前段就是要有细心！！！！！F＊＊K
+#4 改错文件，同名不同路径的文件，更改后不能生效。各种坑爹啊！细心！！！！！F＊＊K
 
 
 ## Step 8
@@ -14,7 +14,9 @@
 
 ### ng-controller ControllerScope  -  Repeater Scope
 
-### controller -->$http --> Dependency Injector --> Service Instance($http,$log,$timeout) 
+### workflow
+
+  controller -->$http --> Dependency Injector --> Service Instance($http,$log,$timeout) 
 												--> Service Factories
   use $http in controler<--
 
