@@ -1,2 +1,17 @@
-<img ng-src="{{player.images[0]}}" class="player">
+<!--<img ng-src="{{player.images[0]}}" class="player">
+<img ng-src="{{mainImageUrl}}" class="player">-->
+<div class="player-images">
+	<img ng-src="{{img}}"
+		class="player"
+		ng-repeat="img in player.images"
+		ng-class="{active:mainImageUrl==img}">
+</div>
 <div> {{player.birth}} - {{player.family}}</div>
+<div>{{player.familyy | checkmark}} </div>
+<div>{{player.family | checkmark}} </div>
+<div>{{player.birth | checkmark}} </div>
+<ul class="player-thumbs">
+	<li ng-repeat= "img in player.images">
+		<img ng-src="{{img}}" ng-click="setImage(img)">
+	</li>
+</ul>

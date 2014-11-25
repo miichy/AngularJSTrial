@@ -1,6 +1,10 @@
 'use strict';
 
-var myApp = angular.module('myApp',['ngRoute','playerController']);
+var myApp = angular.module('myApp',['ngRoute',
+	'playerController',
+	'playerFilter',
+	'playerService',
+	'playerAnimation']);
 
 myApp.config(['$routeProvider',
 	function($routeProvider){

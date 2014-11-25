@@ -20,17 +20,6 @@ body {
 	padding-top: 15px;
 }
 
-img.player {
-	float: left;
-	border: 1px solid black;
-	margin-right: 3em;
-	margin-bottom: 2em;
-	background-color: white;
-	padding: 2em;
-	height: 400px;
-	width: 400px;
-}
-
 ul.player-thumbs {
 	margin: 0;
 	list-style: none;
@@ -47,6 +36,10 @@ ul.player-thumbs img {
 	height: 100px;
 	width: 100px;
 	padding: 1em;
+}
+
+ul.player-thumbs img:hover { 
+	cursor:pointer;
 }
 
 ul.specs {
@@ -67,4 +60,28 @@ ul.specs dt {
 
 h1 {
 	border-bottom: 1px solid gray;
+}
+
+.player-images {
+	background-color: white;
+	width: 450px;
+	height: 450px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+
+img.player {
+	float: left;
+	margin-right: 3em;
+	margin-bottom: 2em;
+	background-color: white;
+	padding: 2em;
+	height: 400px;
+	width: 400px;
+	display: none;
+}
+
+img.player:first-child {
+	display: block;
 }
